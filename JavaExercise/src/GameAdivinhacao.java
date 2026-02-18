@@ -12,27 +12,16 @@ public class GameAdivinhacao {
         Scanner entrada = new Scanner(System.in);
         Random gerador = new Random();
         char novoJogo;
-        
-//O 'do-while' permite que haja um loop para perguntar ao usuário se ele deseja continuar
-       
-import java.util.Random;
-import java.util.Scanner;
-
-public class GameAdivinhacao {
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        Random gerador = new Random();
-        char novoJogo;
 
         do {
 
-            int numeroGerado = new Random().nextInt(101);
+            int numeroGerado = gerador.nextInt(101);
             int tentativas = 0;
             int palpite;
             boolean acertou = false;
 
             System.out.println("\n------Seja bem-vinda(o) ao novo jogo da adivinhação!------");
-            System.out.println("Escolha um número de 0 a 100, você tem 5 tentativas:\n");
+            System.out.println("Escolha um número de 0 a 100, você tem 5 tentativas. Boa sorte!\n");
 
             while (tentativas < 5) {
                 System.out.print("Digite o número ==> ");
@@ -76,4 +65,5 @@ public class GameAdivinhacao {
 
     }
 }
+
 
